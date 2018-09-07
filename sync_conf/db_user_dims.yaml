@@ -1,0 +1,18 @@
+# Contains configuration for all database user related tables.
+
+DIMENSIONS:
+
+    SSP_BUSINESS_CLIENT_ACCT:
+         SOURCE_TABLE_NAME: BusinessIntelligence.acct_ssp_business_client
+         TARGET_TABLE_NAME: mstr_datamart.acct_ssp_business_client
+         IS_FULL_SYNC: True
+
+    BIDDER_SITES:
+         SOURCE_TABLE_NAME: BusinessIntelligence.bidder_sites
+         TARGET_TABLE_NAME: mstr_datamart.bidder_sites
+         IS_FULL_SYNC: True
+
+    DIM_SITES_TO_OWNERS:
+         SOURCE_TABLE_NAME: mstr_datamart.dim_sites_to_owners
+         TARGET_TABLE_NAME: mstr_datamart.dim_sites_to_owners
+         IS_FULL_SYNC: True

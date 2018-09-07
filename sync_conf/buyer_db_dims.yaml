@@ -1,0 +1,8 @@
+# Contains configuration for buyer db dimensions.
+
+DIMENSIONS:
+
+    DEMAND_PARTNER_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.demand_partner_dim
+         TARGET_TABLE_NAME: mstr_datamart.demand_partner_dim
+         KEYS:  advertiser_account_nk,partner_buyer_id,buyer_id

@@ -1,0 +1,33 @@
+# Contains configuration for all demand side dimensions.
+
+DIMENSIONS:
+
+    ADVERTISER_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.advertiser_dim
+         TARGET_TABLE_NAME: mstr_datamart.advertiser_dim
+         KEYS: advertiser_account_nk, platform_id
+
+    ORDER_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.order_dim
+         TARGET_TABLE_NAME: mstr_datamart.order_dim
+         KEYS: order_nk, platform_id
+
+    LINE_ITEM_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.line_item_dim
+         TARGET_TABLE_NAME: mstr_datamart.line_item_dim
+         KEYS: line_item_nk, platform_id
+
+    AD_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.ad_dim
+         TARGET_TABLE_NAME: mstr_datamart.ad_dim
+         KEYS: ad_nk, platform_id
+
+    LINE_ITEM_HISTORY_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.cpd_line_item_history_new
+         TARGET_TABLE_NAME: mstr_datamart.cpd_line_item_history_new
+         KEYS: cpd_line_item_history_id,line_item_nk,version
+
+    PACKAGE_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.package_dim
+         TARGET_TABLE_NAME: mstr_datamart.package_dim
+         KEYS: package_nk, platform_id

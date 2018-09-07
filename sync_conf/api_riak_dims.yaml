@@ -1,0 +1,73 @@
+# Contains configuration for dimensions downloaded from api riak.
+
+DIMENSIONS:
+
+    BUYING_MODEL_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.buying_model_dim
+         TARGET_TABLE_NAME: mstr_datamart.buying_model_dim
+         KEYS: buying_model_sid, buying_model_code
+
+    DELIVERY_MODE_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.delivery_mode_dim
+         TARGET_TABLE_NAME: mstr_datamart.delivery_mode_dim
+         KEYS: delivery_mode_code
+
+    PRICING_MODEL_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.pricing_model_dim
+         TARGET_TABLE_NAME: mstr_datamart.pricing_model_dim
+         KEYS: pricing_model_sid,pricing_model_code
+
+    SALES_CHANNEL_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.sales_channel_dim
+         TARGET_TABLE_NAME: mstr_datamart.sales_channel_dim
+         KEYS: sales_channel_code
+
+    BRAND_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.brand_dim
+         TARGET_TABLE_NAME: mstr_datamart.brand_dim
+         KEYS: brand_nk
+
+    BRAND_INDUSTRY_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.brand_industry_dim
+         TARGET_TABLE_NAME: mstr_datamart.brand_industry_dim
+         KEYS: brand_id
+
+    DEAL_TYPE_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.deal_type_dim
+         TARGET_TABLE_NAME: mstr_datamart.deal_type_dim
+         KEYS: deal_type_sid,deal_type_uid
+
+    DELIVERY_MEDIUM_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.delivery_medium_dim
+         TARGET_TABLE_NAME: mstr_datamart.delivery_medium_dim
+         KEYS: delivery_medium_code
+
+    MARKET_CATEGORY_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.market_category_dim
+         TARGET_TABLE_NAME: mstr_datamart.market_category_dim
+         KEYS: category_nk
+
+    SCREEN_LOCATION_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.screen_location_dim
+         TARGET_TABLE_NAME: mstr_datamart.screen_location_dim
+         KEYS: screen_location_code
+
+    SINGLE_CARRIER_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.single_carrier
+         TARGET_TABLE_NAME: mstr_datamart.single_carrier
+         KEYS: carrier_code
+
+    BUYING_MODEL_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.buying_model_dim
+         TARGET_TABLE_NAME: mstr_datamart.buying_model_dim
+         KEYS: buying_model_sid, buying_model_code
+
+    DELIVERY_MODE_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.delivery_mode_dim
+         TARGET_TABLE_NAME: mstr_datamart.delivery_mode_dim
+         KEYS: delivery_mode_code
+
+    PRICING_MODEL_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.pricing_model_dim
+         TARGET_TABLE_NAME: mstr_datamart.pricing_model_dim
+         KEYS: pricing_model_sid, pricing_model_code

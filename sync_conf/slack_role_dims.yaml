@@ -1,0 +1,28 @@
+# Contains configuration for dimensions related to .json files under /etc/ox directory.
+
+DIMENSIONS:
+
+    PLATFORM_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.platform_dim
+         TARGET_TABLE_NAME: mstr_datamart.platform_dim
+         KEYS: platform_id
+
+    MARKET_OPERATOR_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.market_operator_dim
+         TARGET_TABLE_NAME: mstr_datamart.market_operator_dim
+         KEYS: operator_id
+
+    CONTENT_TOPIC_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.content_topic_dim
+         TARGET_TABLE_NAME: mstr_datamart.content_topic_dim
+         KEYS: platform_id, content_topic_nk
+
+    CONTENT_TOPIC_GROUP_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.content_topic_group_dim
+         TARGET_TABLE_NAME: mstr_datamart.content_topic_group_dim
+         KEYS: content_topic_group_sid
+
+    CONTENT_TOPIC_GROUP_BRIDGE:
+         SOURCE_TABLE_NAME: mstr_datamart.content_topic_group_bridge
+         TARGET_TABLE_NAME: mstr_datamart.content_topic_group_bridge
+         KEYS:  content_topic_group_sid, content_topic_sid

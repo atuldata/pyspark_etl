@@ -1,0 +1,33 @@
+# Contains configuration for supply side dimensions.
+
+DIMENSIONS:
+
+    PUBLISHER_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.publisher_dim
+         TARGET_TABLE_NAME: mstr_datamart.publisher_dim
+         KEYS: publisher_account_nk, platform_id
+
+    SITE_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.site_dim
+         TARGET_TABLE_NAME: mstr_datamart.site_dim
+         KEYS: site_nk, platform_id
+
+    AD_UNIT_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.ad_unit_dim
+         TARGET_TABLE_NAME: mstr_datamart.ad_unit_dim
+         KEYS: ad_unit_nk, platform_id
+
+    SITE_SECTION_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.site_section_dim
+         TARGET_TABLE_NAME: mstr_datamart.site_section_dim
+         KEYS: site_section_nk, platform_id
+
+    DEAL_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.deal_dim
+         TARGET_TABLE_NAME: mstr_datamart.deal_dim
+         KEYS: deal_nk, platform_id
+
+    AD_UNIT_HISTORY_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.ad_unit_deal_type_history_new
+         TARGET_TABLE_NAME: mstr_datamart.ad_unit_deal_type_history_new
+         KEYS: ad_unit_deal_type_history_id, ad_unit_nk,version

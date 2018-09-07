@@ -1,0 +1,18 @@
+#Contains configuration for dimensions related to quova files under /etc/datamart
+
+DIMENSIONS:
+
+    DMA_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.dma_dim
+         TARGET_TABLE_NAME: mstr_datamart.dma_dim
+         KEYS: dma_code
+
+    GEO_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.geo_dim
+         TARGET_TABLE_NAME: mstr_datamart.geo_dim
+         KEYS: country_id,country_name,country_code,state_name,city_name
+
+    COUNTRY_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.country_dim
+         TARGET_TABLE_NAME: mstr_datamart.country_dim
+         KEYS: country_code, country_name

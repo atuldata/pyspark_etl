@@ -1,0 +1,13 @@
+# Contains configuration for translation dimensions. Translation dimensions files are present under /etc/datamart/translations.
+
+DIMENSIONS:
+
+    TRANSLATED_STRING_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.translated_string
+         TARGET_TABLE_NAME: mstr_datamart.translated_string
+         KEYS: en_us_str
+
+    TRANSLATION_DIM:
+         SOURCE_TABLE_NAME: mstr_datamart.translation
+         TARGET_TABLE_NAME: mstr_datamart.translation
+         KEYS: str_id, lang
